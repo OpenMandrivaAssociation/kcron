@@ -19,7 +19,7 @@ BuildRequires:	kdelibs4-devel
 Kcron is a graphical frontend to the cron system, used to schedule regular
 tasks on a Unix system.
 
-%files -n kcron
+%files
 %{_kde_services}/kcm_cron.desktop
 %{_kde_libdir}/kde4/kcm_cron.so
 %{_kde_docdir}/*/*/kcron
