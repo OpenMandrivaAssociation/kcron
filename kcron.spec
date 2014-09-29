@@ -1,6 +1,6 @@
 Summary:	Graphical editor for the cron command scheduler
 Name:		kcron
-Version:	4.13.3
+Version:	4.14.1
 Release:	1
 Epoch:		2
 License:	GPLv2+
@@ -37,6 +37,9 @@ tasks on a Unix system.
 %makeinstall_std -C build
 
 %changelog
+* Mon Sep 29 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 2:4.14.1-1
+- New version 4.14.1
+
 * Tue Jul 15 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 2:4.13.3-1
 - New version 4.13.3
 
