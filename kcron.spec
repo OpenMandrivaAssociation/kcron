@@ -7,7 +7,7 @@ License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org
 Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
-BuildRequires:	cmake(ECM)
+BuildRequires:	cmake(KF5DocTools)
 
 %description
 Kcron is a graphical frontend to the cron system, used to schedule regular
