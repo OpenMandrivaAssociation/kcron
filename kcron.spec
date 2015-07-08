@@ -33,4 +33,4 @@ tasks on a Unix system.
 %ninja -C build
 
 %install
-%ninja_install_std -C build
+%ninja_install -C build
