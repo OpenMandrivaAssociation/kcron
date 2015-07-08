@@ -19,9 +19,9 @@ Kcron is a graphical frontend to the cron system, used to schedule regular
 tasks on a Unix system.
 
 %files
-%{_kde_services}/kcm_cron.desktop
-%{_kde_libdir}/kde4/kcm_cron.so
-%{_kde_docdir}/*/*/kcron
+%{_datadir}/kservices5/kcm_cron.desktop
+%{_libdir}/qt5/plugins/kcm_cron.so
+%doc %{_docdir}/*/*/kcron
 
 #------------------------------------------------------------------------
 
