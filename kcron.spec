@@ -21,7 +21,7 @@ tasks on a Unix system.
 %files
 %{_datadir}/kservices5/kcm_cron.desktop
 %{_libdir}/qt5/plugins/kcm_cron.so
-%doc %{_docdir}/*/*/kcron
+%doc %{_docdir}/*/*/kcontrol/kcron
 
 #------------------------------------------------------------------------
 
