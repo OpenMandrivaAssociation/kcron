@@ -1,6 +1,6 @@
 Summary:	Graphical editor for the cron command scheduler
 Name:		kcron
-Version:	17.03.80
+Version:	17.04.0
 Release:	1
 Epoch:		2
 License:	GPLv2+
@@ -19,10 +19,9 @@ BuildRequires:	cmake(KF5XmlGui)
 Kcron is a graphical frontend to the cron system, used to schedule regular
 tasks on a Unix system.
 
-%files
+%files -f %{name}.lang
 %{_datadir}/kservices5/kcm_cron.desktop
 %{_libdir}/qt5/plugins/kcm_cron.so
-%doc %{_docdir}/*/*/kcontrol5/kcron
 
 #------------------------------------------------------------------------
 
@@ -35,3 +34,4 @@ tasks on a Unix system.
 
 %install
 %ninja_install -C build
+%find_lang %{name} --with-html
