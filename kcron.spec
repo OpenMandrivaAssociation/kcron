@@ -8,12 +8,15 @@ Group:		Graphical desktop/KDE
 Url:		http://www.kde.org
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
+BuildRequires:	cmake(ECM)
+BuildRequires:	cmake(Qt5Core)
+BuildRequires:	cmake(Qt5Widgets)
+BuildRequires:	cmake(Qt5PrintSupport)
+BuildRequires:	cmake(KF5ConfigWidgets)
 BuildRequires:	cmake(KF5DocTools)
 BuildRequires:	cmake(KF5I18n)
 BuildRequires:	cmake(KF5IconThemes)
 BuildRequires:	cmake(KF5KIO)
-BuildRequires:	cmake(KF5XmlGui)
-
 
 %description
 Kcron is a graphical frontend to the cron system, used to schedule regular
