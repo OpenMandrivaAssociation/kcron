@@ -1,4 +1,2 @@
-removed_sources:
-  kcron-17.12.1.tar.xz: 90a6e2e241094b9a895790ce7fbd16f15d277db7
 sources:
-  kcron-18.08.3.tar.xz: 83b7c8e610046a0276e82893915847adc46dc82f
+  kcron-18.11.80.tar.xz: 91de943b42bcd3d5cd2d27390638b48a76ffc701
