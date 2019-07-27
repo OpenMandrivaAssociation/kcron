@@ -1,6 +1,6 @@
 Summary:	Graphical editor for the cron command scheduler
 Name:		kcron
-Version:	19.04.3
+Version:	19.07.80
 Release:	1
 Epoch:		2
 License:	GPLv2+
@@ -23,7 +23,7 @@ Kcron is a graphical frontend to the cron system, used to schedule regular
 tasks on a Unix system.
 
 %files -f %{name}.lang
-%{_sysconfdir}/xdg/kcron.categories
+%{_datadir}/qlogging-categories5/kcron.categories
 %{_datadir}/kservices5/kcm_cron.desktop
 %{_libdir}/qt5/plugins/kcm_cron.so
 
