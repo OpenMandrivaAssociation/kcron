@@ -1,6 +1,6 @@
 Summary:	Graphical editor for the cron command scheduler
 Name:		kcron
-Version:	19.08.3
+Version:	19.11.80
 Release:	1
 Epoch:		2
 License:	GPLv2+
@@ -26,6 +26,7 @@ tasks on a Unix system.
 %{_datadir}/qlogging-categories5/kcron.categories
 %{_datadir}/kservices5/kcm_cron.desktop
 %{_libdir}/qt5/plugins/kcm_cron.so
+%{_datadir}/metainfo/org.kde.kcron.metainfo.xml
 
 #------------------------------------------------------------------------
 
