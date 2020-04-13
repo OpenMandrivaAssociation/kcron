@@ -8,6 +8,7 @@ Group:		Graphical desktop/KDE
 Url:		http://www.kde.org
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
+Patch0:		kcron-qt-5.15.patch
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt5Core)
 BuildRequires:	cmake(Qt5Widgets)
@@ -31,7 +32,7 @@ tasks on a Unix system.
 #------------------------------------------------------------------------
 
 %prep
-%setup -q
+%autosetup -p1
 %cmake_kde5
 
 %build
