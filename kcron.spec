@@ -1,6 +1,6 @@
 Summary:	Graphical editor for the cron command scheduler
 Name:		kcron
-Version:	22.12.2
+Version:	22.12.3
 Release:	1
 Epoch:		2
 License:	GPLv2+
