@@ -17,6 +17,7 @@ BuildRequires:	cmake(KF5DocTools)
 BuildRequires:	cmake(KF5I18n)
 BuildRequires:	cmake(KF5IconThemes)
 BuildRequires:	cmake(KF5KIO)
+BuildRequires:	cmake(KF5KCMUtils)
 
 %description
 Kcron is a graphical frontend to the cron system, used to schedule regular
