@@ -11,12 +11,16 @@ BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt6Core)
 BuildRequires:	cmake(Qt6Widgets)
 BuildRequires:	cmake(Qt6PrintSupport)
+BuildRequires:  cmake(Qt6QmlCore)
+BuildRequires:  cmake(KF6Auth)
 BuildRequires:	cmake(KF6ConfigWidgets)
 BuildRequires:	cmake(KF6DocTools)
 BuildRequires:	cmake(KF6I18n)
 BuildRequires:	cmake(KF6IconThemes)
 BuildRequires:	cmake(KF6KIO)
 BuildRequires:	cmake(KF6KCMUtils)
+BuildRequires:  qt6-qtbase-theme-gtk3
+BuildRequires:  qml(QtNetwork)
 
 %description
 Kcron is a graphical frontend to the cron system, used to schedule regular
