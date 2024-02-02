@@ -1,7 +1,7 @@
 Summary:	Graphical editor for the cron command scheduler
 Name:		plasma6-kcron
-Version:	24.01.90
-Release:	3
+Version:	24.01.95
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org
