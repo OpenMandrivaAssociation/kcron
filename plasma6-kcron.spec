@@ -3,8 +3,8 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Summary:	Graphical editor for the cron command scheduler
 Name:		plasma6-kcron
-Version:	24.08.3
-Release:	%{?git:0.%{git}.}2
+Version:	24.12.0
+Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		https://www.kde.org
@@ -34,8 +34,8 @@ Kcron is a graphical frontend to the cron system, used to schedule regular
 tasks on a Unix system.
 
 %files -f kcron.lang
+%{_qtdir}/plugins/plasma/kcms/systemsettings/kcm_cron.so
 %{_datadir}/qlogging-categories6/kcron.categories
-%{_libdir}/qt6/plugins/plasma/kcms/systemsettings_qwidgets/kcm_cron.so
 %{_datadir}/metainfo/org.kde.kcron.metainfo.xml
 %{_libdir}/libexec/kf6/kauth/kcron_helper
 %{_datadir}/dbus-1/system-services/local.kcron.crontab.service
