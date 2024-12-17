@@ -26,6 +26,7 @@ BuildRequires:	cmake(KF6I18n)
 BuildRequires:	cmake(KF6IconThemes)
 BuildRequires:	cmake(KF6KIO)
 BuildRequires:	cmake(KF6KCMUtils)
+BuildRequires:	cmake(KF6KirigamiAddons)
 BuildRequires:  qt6-qtbase-theme-gtk3
 BuildRequires:  qml(QtNetwork)
 
