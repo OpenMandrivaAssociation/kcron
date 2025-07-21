@@ -3,7 +3,7 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Summary:	Graphical editor for the cron command scheduler
 Name:		kcron
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -30,6 +30,11 @@ BuildRequires:	cmake(KF6KirigamiAddons)
 BuildRequires:  qt6-qtbase-theme-gtk3
 BuildRequires:  qml(QtNetwork)
 
+%rename plasma6-kcron
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
 %description
 Kcron is a graphical frontend to the cron system, used to schedule regular
 tasks on a Unix system.
@@ -43,18 +48,3 @@ tasks on a Unix system.
 %{_datadir}/dbus-1/system.d/local.kcron.crontab.conf
 %{_datadir}/polkit-1/actions/local.kcron.crontab.policy
 %{_datadir}/applications/kcm_cron.desktop
-
-#------------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n kcron-%{?git:%{gitbranchd}}%{!?git:%{version}}
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja -C build
-
-%install
-%ninja_install -C build
-%find_lang kcron --with-html
